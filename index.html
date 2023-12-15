@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Ferrero</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Aos-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav-background"></div>
+        <div class="header-contents">
+            <div class="logo-box">
+                <img src="./imgs/header/logo.png" alt="" class="logo" id="logo">
+            </div>
+            <nav>
+                <ul class="nav-ul">
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" id="nav01">THE GROUP</a>
+                        <ul class="nav-depth">
+                            <li><a href="#">한 가족의 이야기</a></li>
+                            <li><a href="#">사명</a></li>
+                            <li><a href="#">사업</a></li>
+                            <li><a href="#">세계속의 페레로</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" id="nav02">SUSTAINABILTY</a>
+                        <ul class="nav-depth">
+                            <li><a href="#">기업 원칙</a></li>
+                            <li><a href="#">존중과 책임</a></li>
+                            <li><a href="#">연구와 혁신</a></li>
+                            <li><a href="#">일, 창조, 나눔</a></li>
+                        </ul class="nav-depth">
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" id="nav03">BRAND</a>
+                        <ul class="nav-depth">
+                            <li><a href="#">누텔라</a></li>
+                            <li><a href="#">페레로 로쉐</a></li>
+                            <li><a href="#">킨더 초콜릿</a></li>
+                            <li><a href="#">틱택</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" id="nav04">NEWS</a>
+                        <ul class="nav-depth">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#" class="nav-link" id="nav05">WEBSITE</a>
+                        <ul class="nav-depth">
+                            <li><a href="#">채용</a></li>
+                            <li><a href="#">페레로 기업가 프로젝트</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <button type="button" class="nav-btn"><img src="./imgs/header/nav-mb-btn.png" alt=""></button>
+        </div>
+    </header>
+    <main>
+        <section class="main-bnr">
+            <h2 class="sc-tt">메인 배너</h2>
+            <div class="swiper" id="main-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide main-slide" id="bnr-nutella">
+                        <div class="main-slide-text-box">
+                            <div class="main-slide-text">
+                                <h3 class="main-slide-tt">누텔라</h3>
+                                <p class="main-slide-desc">사랑을 나누는 다양한 방법</p>
+                                <a href="#" class="main-slide-link">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slide" id="bnr-ferrero">
+                        <div class="main-slide-text-box">
+                            <div class="main-slide-text">
+                                <h3 class="main-slide-tt">페레로 로쉐</h3>
+                                <p class="main-slide-desc">황금빛 경험</p>
+                                <a href="#" class="main-slide-link">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slide" id="bnr-kinder">
+                        <div class="main-slide-text-box">
+                            <div class="main-slide-text">
+                                <h3 class="main-slide-tt">틱택</h3>
+                                <p class="main-slide-desc">시원함의 극!</p>
+                                <a href="#" class="main-slide-link">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide main-slide" id="bnr-tictac">
+                        <div class="main-slide-text-box">
+                            <div class="main-slide-text">
+                                <h3 class="main-slide-tt">킨더</h3>
+                                <p class="main-slide-desc">소중한 자녀와 달콤한 시간</p>
+                                <a href="#" class="main-slide-link">WEBSITE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <section class="information">
+            <h2 class="sc-tt">페레로 소개</h2>
+            <div class="info">
+                <div class="info-contents information-contents">
+                    <div class="info-img-box" data-aos="fade-up" data-aos-anchor=".info-contents">
+                        <img src="./imgs/information/intro-ferrero.png" alt="" class="info-img">
+                    </div>
+                    <div class="info-text" data-aos="fade-up" data-aos-anchor=".info-sub-desc">
+                        <p class="sc-sub-desc info-sub-desc">Information by floor</p>
+                        <h3 class="sc-sub-tt">페레로를 소개합니다.</h3>
+                        <p class="sc-desc">
+                            모든 페레로 로쉐는 정성과 헌신으로 만들어집니다.
+                            통헤이즐넛을 
+                            <br>벨벳처럼 부드러운 속재료에 담그고 밀크 초콜릿을 입힌 다음 헤이즐넛 조각들로 
+                            <br>덮습니다. 거부할 수 없는 맛을 경험하세요.</p>
+                        <a href="#" class="sc-link">view more</a>
+                    </div>
+                </div>
+                <div class="about-contents information-contents">
+                    <div class="info-img-box about-img-box" data-aos="fade-up" data-aos-anchor=".about-contents">
+                        <img src="./imgs/information/about-family.png" alt="" class="about-img">
+                    </div>
+                    <div class="info-text" data-aos="fade-up" data-aos-anchor=".about-sub-desc">
+                        <p class="sc-sub-desc about-sub-desc">About us</p>
+                        <h3 class="sc-sub-tt">가족의 이야기</h3>
+                        <p class="sc-desc about-desc">
+                            1946년 이탈리아 북부의 그림 같은 마을 알바에서 피에트로 페레로
+                            <br>(Pietro Ferrero)와 조반니 페레로(Giovanni Ferrero) 형제가 설립한 
+                            <br>페레로 그룹은 현재 Kinder, Nutella 등 35개 이상의 사랑받는 브랜드를 
+                            <br>보유한 세계 최대의 과자 포장 식품 회사 중 하나입니다.
+                        </p>
+                        <a href="#" class="sc-link">view more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="approach">
+            <h2 class="sc-tt">어프로치</h2>
+            <div class="approach-contents">
+                <p class="approach-sub-tt sc-sub-tt02" data-aos="fade-up" data-aos-anchor=".approach">Our Approach</p>
+                <h3 class="approach-tt" data-aos="fade-up" data-aos-anchor=".approach">페레로의 접근</h3>
+                <div class="approach-kind">
+                    <div class="approachs nature" data-aos="fade-up" data-aos-anchor=".approach-kind">
+                        <div class="approach-link">
+                            <a href="#">
+                                <img src="./imgs/approach/nature.png" alt="" class="approach-img">
+                                <p class="approach-desc">환경 보호</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="approachs metarial" data-aos="fade-up" data-aos-anchor=".approach-kind" data-aos-delay="200">
+                        <div class="approach-link">
+                            <a href="#">
+                                <img src="./imgs/approach/meterial.png" alt="" class="approach-img">
+                                <p class="approach-desc">원료 공급</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="approachs consume" data-aos="fade-up" data-aos-anchor=".approach-kind" data-aos-delay="400">
+                        <div class="approach-link">
+                            <a href="#">
+                                <img src="./imgs/approach/consume.png" alt="" class="approach-img">
+                                <p class="approach-desc">소비 촉진</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="approachs ability" data-aos="fade-up" data-aos-anchor=".approach-kind" data-aos-delay="600">
+                        <div class="approach-link">
+                            <a href="#">
+                                <img src="./imgs/approach/capacity.png" alt="" class="approach-img">
+                                <p class="approach-desc">역량 강화</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="brand">
+            <h2 class="sc-tt">브랜드</h2>
+            <div class="brand-contents">
+                <p class="sc-sub-tt02" data-aos="fade-up" data-aos-anchor=".brand-tt">brand of Ferrero</p>
+                <h3 class="sc-sub-tt brand-tt" data-aos="fade-up" data-aos-anchor=".brand-tt">페레로의 브랜드</h3>
+                <div class="brand-item-box" data-aos="fade-up" data-aos-anchor=".brand-item-box">
+                    <div class="swiper" id="special-items">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide sp-slide christ">
+                                <a href="#" class="sp-link">
+                                    <div class="sp-text christ-text">
+                                        <h4 class="sp-tt">크리스마스 스페셜</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide sp-slide vallen">
+                                <a href="#" class="sp-link">
+                                    <div class="sp-text vallen-text">
+                                        <h4 class="sp-tt">발렌타인데이 <br>스페셜</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide sp-slide cheer">
+                                <a href="#" class="sp-link">
+                                    <div class="sp-text cheer-text">
+                                        <h4 class="sp-tt">응원 스페셜</h4>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-button-prev sp-arrow" id="sp-prev"></div>
+                        <div class="swiper-button-next sp-arrow" id="sp-next"></div>
+                    </div>
+                    <div class="ot-brand"> <!--페레로사의 다른 브랜드-->
+                        <div class="br-ferrero">
+                            <a href="#" class="br-link">
+                                <div class="br-img-box">
+                                    <img src="./imgs/brand/br-ferrero.png" alt="" class="br-img">
+                                </div>
+                                <div class="br-text">
+                                    <h3 class="br-tt">페레로 로쉐</h3>
+                                    <p class="br-btn">view more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="br-nutella">
+                            <a href="#" class="br-link">
+                                <div class="br-img-box">
+                                    <img src="./imgs/brand/br-nutella.png" alt="" class="br-img">
+                                </div>
+                                <div class="br-text">
+                                    <h3 class="br-tt">누텔라</h3>
+                                    <p class="br-btn">view more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="br-kinder">
+                            <a href="#" class="br-link">
+                                <div class="br-img-box">
+                                    <img src="./imgs/brand/br-kinder.png" alt="" class="br-img">
+                                </div>
+                                <div class="br-text">
+                                    <h3 class="br-tt">킨더 초콜렛</h3>
+                                    <p class="br-btn">view more</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="br-tictac">
+                            <a href="#" class="br-link">
+                                <div class="br-img-box">
+                                    <img src="./imgs/brand/br-tictac.png" alt="" class="br-img">
+                                </div>
+                                <div class="br-text">
+                                    <h3 class="br-tt">틱 택</h3>
+                                    <p class="br-btn">view more</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="news-web">
+            <h2 class="sc-tt">뉴스, 웹사이트</h2>
+            <div class="news-web-contents">
+                <div class="news">
+                    <div class="sc-tt-box">
+                        <h3 class="sc-sub-tt news-tt" data-aos="fade-up" data-aos-anchor=".news-tt">뉴스</h3>
+                        <a href="#" class="more-link" data-aos="fade-up" data-aos-anchor=".news-tt">view more</a>
+                    </div>
+                    <div class="news-contents">
+                        <ul>
+                            <li class="news-link-box" data-aos="fade-up" data-aos-anchor=".news-tt">
+                                <a href="#" class="news-link">
+                                    페레로, 지진 발생 후 기부 
+                                </a>
+                                <span class="news-date">2023.10.02</span>
+                            </li>
+                            <li class="news-link-box" data-aos="fade-up" data-aos-anchor=".news-tt">
+                                <a href="#" class="news-link">
+                                    최신 코코아 헌장 진행 보고서와 코코아 공급업체 목록 발행 
+                                </a>
+                                <span class="news-date">2023.07.31</span>
+                            </li>
+                            <li class="news-link-box" data-aos="fade-up" data-aos-anchor=".news-tt">
+                                <a href="#" class="news-link">
+                                    지속 가능성 목표 달성을 위한 강력한 진전 
+                                </a>
+                                <span class="news-date">2023.06.21</span>
+                            </li>
+                            <li class="news-link-box" data-aos="fade-up" data-aos-anchor=".news-tt">
+                                <a href="#" class="news-link">
+                                    최신 COCOA AND FOREST INITIATIVE 연례 보고서 
+                                </a>
+                                <span class="news-date">2023.05.31</span>
+                            </li>
+                            <li class="news-link-box" data-aos="fade-up" data-aos-anchor=".news-tt">
+                                <a href="#" class="news-link">
+                                    페레로, Save the Children과 코코아 추적성 및 파트너십 진행상황 
+                                </a>
+                                <span class="news-date">2022.09.12</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="web">
+                    <div class="sc-tt-box">
+                        <h3 class="sc-sub-tt news-tt" data-aos="fade-up" data-aos-anchor=".news-tt">웹 사이트</h3>
+                        <a href="#" class="more-link" data-aos="fade-up" data-aos-anchor=".news-tt">view more</a>
+                    </div>
+                    <div class="web-contents" data-aos="fade-up" data-aos-anchor=".web-contents">
+                        <div class="swiper" id="web-slider">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                              <!-- Slides -->
+                                <div class="swiper-slide web-slide">
+                                    <a href="#" class="web-link">
+                                        <div class="web-img-box">
+                                            <img src="./imgs/news&web/house.png" alt="" class="web-img">
+                                        </div>
+                                        <div class="web-text">
+                                            <h3 class="web-tt">페레로 제단</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide web-slide">
+                                    <a href="#" class="web-link">
+                                        <div class="web-img-box">
+                                            <img src="./imgs/news&web/career.png" alt="" class="web-img">
+                                        </div>
+                                        <div class="web-text">
+                                            <h3 class="web-tt">페레로 채용</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide web-slide">
+                                    <a href="#" class="web-link">
+                                        <div class="web-img-box">
+                                            <img src="./imgs/news&web/company.png" alt="" class="web-img">
+                                        </div>
+                                        <div class="web-text">
+                                            <h3 class="web-tt">미셸 페레로 기업가 프로젝트</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide web-slide">
+                                    <a href="#" class="web-link">
+                                        <div class="web-img-box">
+                                            <img src="./imgs/news&web/coconut.png" alt="" class="web-img">
+                                        </div>
+                                        <div class="web-text">
+                                            <h3 class="web-tt">페레로 지속 가능성</h3>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev web-arrow" id="web-prev"></div>
+                            <div class="swiper-button-next web-arrow" id="web-next"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="ft-logo-box">
+            <img src="./imgs/footer/ft-logo.png" alt="" class="ft-logo">
+        </div>
+        <div class="ft-text">
+            <div class="ft-product">
+                <h3 class="ft-tt">제품</h3>
+                <div class="ft-desc">
+                    <ul>
+                        <li>
+                            <a href="#" class="ft-link">페레로 로쉐</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link">누텔라</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="ft-link">킨더 초콜렛</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link">틱 택</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-info">
+                <h3 class="ft-tt">정보</h3>
+                <div class="ft-desc">
+                    <ul>
+                        <li>
+                            <a href="#" class="ft-link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-contact">
+                <h3 class="ft-tt">문의</h3>
+                <div class="ft-desc">
+                    <ul>
+                        <li>
+                            <a href="#" class="ft-link">기술적 요건</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link">쿠키 정책</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link">개인정보보호정책</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft-sns">
+                <h3 class="ft-tt">팔로우</h3>
+                <div class="ft-desc">
+                    <ul>
+                        <li>
+                            <a href="#" class="ft-link ft-facebook">
+                                <img src="./imgs/footer/facebook.png" alt="" class="ft-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link ft-instar">
+                                <img src="./imgs/footer/insta.png" alt="" class="ft-img">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="ft-link ft-youtube">
+                                <img src="./imgs/footer/youtube.png" alt="" class="ft-img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/swiper.js"></script>
+</body>
+</html>

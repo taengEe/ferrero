@@ -1,0 +1,562 @@
+/* 공용 코드 */
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+ul{
+    font-size: 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+/* header 코드 */
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+    transition: all .5s;
+}
+header:hover{
+    background-color: #fff;
+}
+header:hover .nav-link{
+    color: #333;
+}
+.header-contents{
+    position: relative;
+    z-index: 9;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav-ul>li{
+    position: relative;
+}
+.nav-link{
+    padding: 0 1rem 1rem 1rem;
+    color: #fff;
+}
+.nav-depth{
+    position: absolute;
+    z-index: 9;
+    display: none;
+    font-size: 14px;
+    padding: 2rem 0 0 1rem;
+    transition: display .2s;
+}
+.nav-depth>li{
+    padding-bottom: 1.3rem;
+}
+.nav-background{
+    display: none;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,.8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 220px;
+    z-index: 8;
+}
+.nav-btn{
+    display: none;
+    cursor: pointer;
+    height: 1rem;
+    border: none;
+    background: transparent;
+}
+.nav-btn>img{
+    width: 1rem;
+}
+/* main 코드 */
+main{
+}
+.sc-tt{
+    display: none;
+}
+.main-slide-text-box{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+    width: 1200px;
+    margin: 0 auto;
+}
+.main-slide-text{
+    width: 192px;
+    display: inline-block;
+    text-align: left;
+}
+.main-slide-tt{
+    font-size: 40px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.main-slide-desc{
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 40px;
+}
+.main-slide-link{
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,.5);
+    padding: 10px 40px;
+    color: rgba(255,255,255,.5);
+    transition: all .5s;
+}
+.main-slide-link:hover{
+    border: 1px solid #E2D9A6;
+    color: #E2D9A6;
+}
+.kinder .main-slide-tt,
+.kinder .main-slide-desc{
+    color: #593623;
+}
+.kinder .main-slide-link{
+    border: 1px solid rgba(89,54,35,.5);
+    color: rgba(89,54,35,.5);
+}
+.kinder .main-slide-link:hover{
+    border: 1px solid rgba(89,54,35,1);
+    color: rgba(89,54,35,1);
+}
+#main-slider{
+    height: 1000px;
+}
+#bnr-nutella{
+    background: url('../imgs/main-visual/main-img01.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bnr-ferrero{
+    background: url('../imgs/main-visual/main-img02.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bnr-kinder{
+    background: url('../imgs/main-visual/main-img03.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#bnr-tictac{
+    background: url('../imgs/main-visual/main-img04.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*페레로 소개 코드*/
+.information{
+    display: flex;
+    align-items: center;
+    padding: 100px 0px 50px;
+    background: url('../imgs/information/info-background.png') no-repeat;
+    background-position: right;
+    background-color: #fff;
+}
+.info{
+    width: 1200px;
+    margin: 0 auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.information-contents{
+    display: flex;
+}
+.info-contents{
+    margin-bottom: 100px;
+    align-items: flex-end;
+}
+.info-img,
+.about-img{
+    width: 400px;
+    border-radius: 20px;
+}
+.info-img{
+    margin-right: 100px;
+}
+.about-img{
+    margin-left: 200px;
+}
+.about-contents{
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: flex-end;
+}
+.sc-sub-desc{
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+.sc-sub-tt{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.sc-desc{
+    margin-bottom: 30px;
+    letter-spacing: .5px;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #666;
+}
+.sc-link{
+    font-weight: 300;
+    color: #666;
+    font-size: 1rem;
+    transition: all .2s;
+}
+.sc-link:hover{
+    color: #FFC531;
+    text-decoration: underline;
+}
+/*어프로치 코드*/
+.approach{
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+}
+.approach-contents{
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+.approach-tt{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+.sc-sub-tt02{
+    color: #888;
+    margin-bottom: 20px;
+}
+.approach-kind{
+    display: flex;
+    justify-content: space-between;
+}
+.approachs{
+    overflow: hidden;
+    border-radius: 30px;
+}
+.approach-link{
+    position: relative;
+}
+.approach-img{
+    width: 282px;
+    height: 400px;
+    transition: all .5s;
+}
+.approach-img:hover{
+    transform: scale(1.05);
+}
+.approach-desc{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 22px;
+    transition: all .5s
+}
+/*브랜드 코드*/
+.brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F8FC;
+    height: 100vh;
+}
+.sc-sub-tt02{
+    text-align: center;
+}
+.brand-tt{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.brand-item-box{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+#special-items{
+    width: 370px;
+    height: 600px;
+    border-radius: 30px;
+    margin: 0;
+    box-shadow: 7px 7px 5px -3px rgba(0,0,0,.05);
+}
+.sp-link{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.christ{
+    background: url('../imgs/brand/christmas-special.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.vallen{
+    background: url('../imgs/brand/vallen-special.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cheer{
+    background: url('../imgs/brand/cheer-special.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sp-text{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 28px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 2rem;
+    border: 3px solid #fff;
+    padding: 10px 50px;
+    white-space: nowrap;
+}
+.sp-tt{
+    text-align: center;
+}
+.sp-arrow::after{
+    display: none;
+}
+#sp-prev,
+#sp-next{
+    width: 37px;
+    height: 66px;
+    transition: all .5s;
+    opacity: .5;
+}
+#sp-prev:hover,
+#sp-next:hover{
+    opacity: 1;
+}
+#sp-prev{
+    background: url('../imgs/brand/sp-prev.png') no-repeat;
+}
+#sp-next{
+    background: url('../imgs/brand/sp-next.png') no-repeat;
+}
+/*브랜드 섹션 내 페레로의 다른 브랜드*/
+.ot-brand{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ot-brand>div{
+    width: 390px;
+    height: 290px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 7px 7px 5px -3px rgba(0,0,0,.05);
+}
+.br-ferrero,
+.br-nutella{
+    margin-bottom: 20px;
+}
+.br-img-box{
+    width: 390px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 30px 30px 0 0;
+}
+.br-img{
+    height: 170px;
+    transition: all .5s;
+}
+.br-text{
+    padding: 30px 0 0 30px;
+}
+.br-tt{
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+.br-btn{
+    color: #888;
+    font-size: 14px;
+    transition: all .5s;
+}
+.br-link{
+}
+.br-link:hover .br-btn{
+    color: #FFC531;
+}
+.br-link:hover .br-img{
+    transform: scale(1.1);
+}
+/*뉴스, 웹사이트 코드*/
+.news-web{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.news-web-contents{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+.news-web-contents>div{
+    flex-grow: 1;
+}
+.news{
+    margin-right: 50px;
+}
+.sc-tt-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 80px;
+}
+.sc-sub-tt-box>p{
+    text-align: start;
+}
+.news-tt{
+    margin: 0;
+}
+.more-link{
+    font-size: 14px;
+    color: #888;
+}
+.news-contents ul{
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.news-link-box{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F3F8FC;
+    border-radius: 10px;
+    box-shadow: 7px 7px 5px -3px rgba(0,0,0,.05);
+    cursor: pointer;
+}
+.news-link-hover{
+    background-color: #DBEFFF;
+}
+.news-link{
+    color: #333;
+    font-size: 1rem;
+    width: 272px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.news-date{
+    color: #888;
+    font-size: 14px;
+}
+/*뉴스&웹 섹션 내 웹 코드*/
+.web{
+    width: 520px;
+}
+#web-slider{
+    position: relative;
+    height: 355px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.web-slide{
+    position: relative;
+}
+.web-img{
+    width: 100%;
+    height: 355px;
+}
+.web-text{
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    color :#fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.web-arrow{
+    position: absolute;
+    bottom: 20px;
+    width: 15px;
+    height: 28px;
+    opacity: .5;
+    transition: all .5s;
+}
+.web-arrow:hover{
+    opacity: 1;
+}
+.web-arrow::after{
+    display: none;
+}
+#web-prev{
+    background: url('../imgs/news&web/web-prev.png') no-repeat;
+}
+#web-next{
+    background: url('../imgs/news&web/web-next.png') no-repeat;
+}
+/*footer 코드*/
+footer{
+    background-color: #171717;
+    padding: 50px 0px 80px;
+}
+footer a{
+    color: #fff;
+}
+.ft-logo-box{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.ft-text{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ft-text>div{
+    flex-grow: 1;
+    margin-right: 40px;
+}
+.ft-text>div:last-child{
+    margin: 0;
+}
+.ft-tt{
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,.5);
+}
+.ft-desc{
+    padding-top: 20px;
+}
+.ft-desc li{
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+.ft-sns ul{
+    font-size: 0;
+}
+.ft-sns li{
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: bottom;
+}
